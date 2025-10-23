@@ -59,14 +59,14 @@ body {
 }
 
 .p-tools {
-    width: 32ch;
+    width: clamp(250px, 50%, 36.5rem);
     text-align: center;
     font-size: 12px;
     margin-block-end: 1rem;
 }
 
 .div-all {
-    width: clamp(280px, 50%, 38rem);
+    width: clamp(270px, 50%, 38rem);
     height: 200px;
     font-weight: 400;
     font-size: 12px;
@@ -108,4 +108,3 @@ body {
     align-self: flex-end;
     padding-block: 24px;
 }
-
