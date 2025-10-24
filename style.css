@@ -108,3 +108,48 @@ body {
     align-self: flex-end;
     padding-block: 24px;
 }
+
+@media (min-width: 90rem) {
+
+    .container-four-card {
+        width: clamp(450px, 50%, 35rem);
+        min-height: 33rem;
+        display: grid;
+        grid-template-columns: repeat(3, clamp(270px, 50%, 38rem));
+        justify-items: center;
+    }
+
+    .reliable, .p-tools {
+        grid-column: 1 / -1;
+        width: clamp(250px, 42%, 32.5rem);
+    }
+
+    .reliable, .reliable h1 {
+        font-size: clamp(1.5rem, 1rem + 5vw, 1.7rem);
+    }
+
+    .reliable h1 {
+        font-size: clamp(1.6rem, 1rem + 5vw, 1.8rem);
+        letter-spacing: 1px;
+    }
+
+    .supervisor {
+        grid-row: 3 / 5;
+        grid-column: 1 / 2;
+    }
+
+    .team-builder {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+
+    .div-karma {
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+    }
+
+    .div-calculator {
+        grid-row: 3 / 5;
+        grid-column: 3 / 4;
+    }
+}
